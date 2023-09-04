@@ -13,7 +13,12 @@ function ToDoList() {
       <CreateToDo />
       <ul>
         {toDos.map(toDo => (
-          <ToDo text={toDo.text} category={toDo.category} id={toDo.id} />
+          <ToDo
+            key={toDo.id}
+            text={toDo.text}
+            category={toDo.category}
+            id={toDo.id}
+          />
         ))}
       </ul>
     </>
